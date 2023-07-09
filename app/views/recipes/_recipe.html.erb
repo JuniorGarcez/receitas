@@ -1,0 +1,11 @@
+<div id="<%= dom_id recipe %>">
+  <p>
+    <div class="row"><strong><%= recipe.title %></strong></div>
+  </p>
+  <p>
+    <div class="row"><%= recipe.body %></div>
+  </p>
+  <% if recipe.image.attached?%>
+    <%= image_tag(recipe.image, style:"height: 400px;") %>
+  <% end %>
+</div>
